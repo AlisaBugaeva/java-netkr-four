@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/style/style1.css}" rel="stylesheet" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'User ' + ${searchUser.surname} + ' '+ ${searchUser.name} + ' is not found!'" />
+<p ><a href="/searchUser">Find another user</a></p>
+<p><a href="/welcomePage">Go back to WELCOME PAGE</a></p>
+</body>
+</html>

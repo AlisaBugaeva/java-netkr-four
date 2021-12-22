@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/style/style1.css}" rel="stylesheet" />
+</head>
+<body>
+
+<h1>Write an email</h1>
+
+<form action="#" th:action="@{/emailUser}"  method="post">
+    <p>To: <input type="text" name="to"/></p>
+    <p>Subject: <input type="text" name="subject"/></p>
+    <p>Text of email: <textarea rows = "6" name="text"></textarea></p>
+
+    <p><input type="submit" value="Send" /> </p>
+    <p><a href="/welcomePage">Go back to WELCOME PAGE</a></p>
+
+</form>
+
+</body>
+</html>

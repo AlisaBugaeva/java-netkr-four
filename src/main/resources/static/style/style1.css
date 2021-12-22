@@ -1,0 +1,43 @@
+body{background: url("фон1.jpg"); }
+ .card{height:30px;
+     width:1000px;
+     margin:30px auto;
+     background-color: #f5e8a6;
+     box-shadow: 5px 5px 15px #565555;}
+
+
+
+p {font-family: Bradley Hand, cursive;
+    font-style: oblique;
+    font-size:20px;
+    margin: 30px 125px;
+    line-height:22px;
+    text-align:center;
+    top: 30px;
+}
+h1{
+    font-family: Bradley Hand, cursive;
+    font-size:50px;
+    font-style: oblique;
+    color: crimson;
+    text-align:center;
+}
+
+button{
+    font-size:20px;
+}
+.form-group{
+    margin:30px auto;
+}
+
+input[type='file'] {
+    font-family: Bradley Hand, cursive;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+input[type='submit'] {
+    font-size: 20px;
+}
+
+
