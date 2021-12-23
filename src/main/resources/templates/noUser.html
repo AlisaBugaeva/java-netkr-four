@@ -6,9 +6,9 @@
     <link th:href="@{/style/style1.css}" rel="stylesheet" />
 </head>
 <body>
-<h1>Result</h1>
-<p th:text="'User ' + ${searchUser.surname} + ' '+ ${searchUser.name} + ' is not found!'" />
-<p ><a href="/searchUser">Find another user</a></p>
-<p><a href="/welcomePage">Go back to WELCOME PAGE</a></p>
+<h1>Такого пользователя нет</h1>
+<p th:text="'Пользователь ' + ${searchUser.surname} + ' '+ ${searchUser.name} + ' не найден!'" />
+<p ><a href="/searchUser">Найти другого пользователя</a></p>
+<p><a href="/welcomePage">На главную страницу</a></p>
 </body>
 </html>

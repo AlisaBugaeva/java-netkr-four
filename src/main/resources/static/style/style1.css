@@ -18,9 +18,9 @@ p {font-family: Bradley Hand, cursive;
 h1{
     font-family: Bradley Hand, cursive;
     font-size:50px;
-    font-style: oblique;
-    color: crimson;
+    margin: 30px 125px;
     text-align:center;
+    color: crimson;
 }
 
 button{

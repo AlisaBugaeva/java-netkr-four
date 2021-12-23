@@ -6,11 +6,11 @@
     <link th:href="@{/style/style1.css}" rel="stylesheet" />
 </head>
 <body>
-<h1>Result</h1>
-<p th:text="'This is your user: ' + ${searchUser.answer}" />
-<p th:text="'Current time: ' + ${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm')}"/>
-<p th:text="${#request.getHeader('User-Agent')}"/>
-<p ><a href="/searchUser">Find another user</a></p>
-<p><a href="/welcomePage">Go back to WELCOME PAGE</a></p>
+<h1>Пользователь найден!</h1>
+<p th:text="'Информация о пользователе: ' + ${searchUser.answer}" />
+<p th:text="'Текущее время : ' + ${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm')}"/>
+<p th:text=" 'Браузер: ' + ${#request.getHeader('user-agent')}"/>
+<p ><a href="/searchUser">Найти другого пользователя</a></p>
+<p><a href="/welcomePage">На главную страницу</a></p>
 </body>
 </html>

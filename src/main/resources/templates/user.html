@@ -6,17 +6,17 @@
     <link th:href="@{/style/style1.css}" rel="stylesheet" />
 </head>
 <body>
-<h1>Form for user</h1>
+<h1>Добавление пользователя</h1>
 <form action="#" th:action="@{/user}" th:object="${user}" method="post">
-    <p>Surname: <input type="text" required th:field="*{surname}" /></p>
-    <p>Name: <input type="text" required th:field="*{name}" /></p>
-    <p>Otchestvo: <input type="text" th:field="*{otchestvo}" /></p>
-    <p>Age: <input type="number" min="16" max="65" th:field="*{age}" /></p>
-    <p>Salary: <input type="number" th:field="*{salary}" /></p>
+    <p>Фамилия: <input type="text" required th:field="*{surname}" /></p>
+    <p>Имя: <input type="text" required th:field="*{name}" /></p>
+    <p>Отчество: <input type="text" th:field="*{otchestvo}" /></p>
+    <p>Возраст: <input type="number" min="16" max="65" th:field="*{age}" /></p>
+    <p>Зарплата: <input type="number" th:field="*{salary}" /></p>
     <p>Email: <input  type="email" required pattern="\w+@\w+\.ru|\w+@\w+\.com" th:field="*{email}" /></p>
-    <p>Job: <input type="text" th:field="*{job}" /></p>
-    <p><input type="submit" value="Submit" />
-    <p><a href="/welcomePage">Go back to WELCOME PAGE</a></p>
+    <p>Работа: <input type="text" th:field="*{job}" /></p>
+    <p><input type="submit" value="Отправить" />
+    <p><a href="/welcomePage">На главную страницу</a></p>
 </form>
 </body>
 </html>
